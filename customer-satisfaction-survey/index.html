@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Satisfaction Survey</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Customer Satisfaction Survey</h1>
+    <p id="description">Welcome to our Customer Satisfaction Survey! We value your feedback and strive to continuously improve our services based on your input. Please take a moment to share your experience with us. </p>
+  </header>
+
+  <main>
+    <div class="container">
+      <form id="survey-form">
+        <fieldset class="personal-info">
+          <legend class="main-legend">Personal Info</legend>
+          <label id="name-label" for="name">Name:*</label>
+          <input id="name" type="text" name="name" placeholder="Enter your name" required>
+          <label id="email-label" for="email">Email:*</label>
+          <input id="email" type="email" name="email" placeholder="Enter your email" required>
+          <label id="number-label" for="number">Age <span class="small-text">(optional):</span></label>
+          <input id="number" type="number" name="age" placeholder="Enter your age (years)" min="13" max="99">
+        </fieldset>
+
+        <fieldset class="experience-info">
+          <legend class="main-legend">Your Experience</legend>
+          <label class="dropdown-label" for="dropdown">Service used:*</label>
+          <select id="dropdown" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="customer-service">Customer service</option>
+            <option value="technical-support">Technical support</option>
+            <option value="delivery-service">Delivery service</option>
+            <option value="other">Other</option>
+          </select>
+
+          <fieldset class="radio-container">
+            <legend class="sub-legend">Rate your satisfaction level:*</legend>
+            <div class="radio-item">
+              <input id="very-dissatisfied" type="radio" name="satisfaction" value="very-dissatisfied">
+              <label for="very-dissatisfied">Very Dissatisfied</label>
+            </div>
+            <div class="radio-item">
+              <input id="dissatisfied" type="radio" name="satisfaction" value="dissatisfied">
+              <label for="dissatisfied">Dissatisfied</label>
+            </div>
+            <div class="radio-item">
+              <input id="neutral" type="radio" name="satisfaction" value="neutral" checked>
+              <label for="neutral">Neutral</label>
+            </div>
+            <div class="radio-item">
+              <input id="satisfied" type="radio" name="satisfaction" value="satisfied">
+              <label for="satisfied">Satisfied</label>
+            </div>
+            <div class="radio-item">
+              <input id="very-satisfied" type="radio" name="satisfaction" value="very-satisfied">
+              <label for="very-satisfied">Very Satisfied</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="reasons-container">
+            <legend class="sub-legend">Select reasons for your satisfaction/dissatisfaction <span class="small-text">(check all that apply):</span></legend>
+            <div class="reasons-item">
+              <input id="quality" type="checkbox" name="reason" value="quality">
+              <label for="quality">Quality of Service</label>
+            </div>
+            <div class="reasons-item">
+              <input id="response-time" type="checkbox" name="reason" value="response-time">
+              <label for="response-time">Response Time</label>
+            </div>
+            <div class="reasons-item">
+              <input id="customer-support" type="checkbox" name="reason" value="customer-support">
+              <label for="customer-support">Customer Support</label>
+            </div>
+            <div class="reasons-item">
+              <input id="price" type="checkbox" name="reason" value="price">
+              <label for="price">Price</label>
+            </div>
+            <div class="reasons-item">
+              <input id="other-reasons" type="checkbox" name="reason" value="other-reasons">
+              <label for="other-reasons">Other</label>
+            </div>
+          </fieldset>
+
+          <label class="comments-label" for="comments">Additional comments:</label>
+          <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
+        </fieldset>
+
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+
+</html>
