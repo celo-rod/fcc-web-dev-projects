@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'Star Jedi';
+  src: url('../fonts/Starjedi.ttf') format('truetype');
+}
+
+html {
+  font-size: 16px;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem; /*19.2px*/
+  color: #e0e0e0;
+  background-color: #000;
+}
+
+.header-text {
+  text-align: center;
+}
+
+#title {
+  margin: 1.5rem 0 1rem 0; /*1.5rem = 24px*/
+  padding: 0 1rem;
+  font-family: 'Star Jedi', sans-serif;
+  font-size: 3rem;
+  text-transform: lowercase;
+  color: #fff;
+}
+
+p {
+  margin: 0;
+}
+
+#img-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1.5rem; /*24px*/
+  background-color: #e0e0e0;
+  color: #000;
+  border-radius: 2px;
+}
+
+img {
+  display: block;
+}
+
+#image {
+  margin: 1rem auto 0 auto;
+  width: 90%;
+  height: auto;
+  max-width: 100%;
+  min-width: 350px;
+  border-radius: 2px;
+}
+
+#img-caption {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 2.5rem; /*40px*/
+  padding: 0 1rem;
+  font-family: 'Star Jedi', sans-serif;
+  font-size: 1.75rem; /*28px*/
+  text-transform: lowercase;
+  text-align: center;
+  color: #fff;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+}
+
+.info-container ul {
+  margin: 0;
+  padding: 0;
+  max-width: 80%;
+}
+
+.info-container ul li:not(.info-container ul li:last-child) {
+  margin-bottom: 1rem;
+}
+
+.quotes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4.5rem; /*72px*/
+}
+
+.quotes-item {
+  margin: 0 auto 1.5rem auto; /*1.5rem = 24px*/
+  width: 50%;
+  max-width: max-content;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+  background-color: #212121;
+  border-radius: 20px 4px 14px 4px;
+}
+
+.quotes-item:last-of-type {
+  margin-bottom: 0;
+}
+
+blockquote {
+  margin: 0;
+}
+
+footer {
+  margin: 0 auto 2.5rem auto; /*2.5rem = 40px*/
+  text-align: center;
+}
+
+footer p {
+  padding: 0 2rem;
+  line-height: 1.5rem;
+}
+
+#tribute-link {
+  display: inline-block;
+  margin-left: 0.25rem; /*4px*/
+  padding: 0.25rem; /*4px*/
+  color: #000;
+  text-decoration: none;
+  background-color: #e0e0e0;
+  border-radius: 2px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#tribute-link:hover {
+  color: #fff;
+  background-color: #212121;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1rem;
+  }
+
+  #title {
+    font-size: 2.25rem; /*36px*/
+  }
+
+  h2 {
+    font-size: 1.25rem; /*20px*/
+  }
+
+  #img-div {
+    margin: 1.2rem 0 0 0; /*1.2rem = 19.2px*/
+    width: 100%;
+  }
+
+  #image {
+    margin-top: 0;
+  }
+
+  .quotes-item {
+    width: 80%;
+  }
+}
